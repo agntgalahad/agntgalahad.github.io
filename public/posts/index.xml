@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on RoboScope</title>
+    <title>Posts on Himanshu Patil</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on RoboScope</description>
+    <description>Recent content in Posts on Himanshu Patil</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Himanshu</copyright>
-    <lastBuildDate>Tue, 14 Jan 2025 10:52:56 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jan 2025 22:46:07 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test Blog</title>
-      <link>http://localhost:1313/posts/test_blog/</link>
-      <pubDate>Tue, 14 Jan 2025 10:52:56 +0530</pubDate>
-      <guid>http://localhost:1313/posts/test_blog/</guid>
-      <description></description>
+      <title>The LiDAR Drone Idea</title>
+      <link>http://localhost:1313/posts/lidar_idea/</link>
+      <pubDate>Wed, 15 Jan 2025 22:46:07 +0530</pubDate>
+      <guid>http://localhost:1313/posts/lidar_idea/</guid>
+      <description>&lt;p&gt;IDEA:&lt;br&gt;&#xA;To mount a LiDAR sensor on top of a drone to allow for real time obstacle avoidance. This should allow to fly the drone in an indoor environment autonomously. The drone will also have a camera mounted on it for active person tracking and following while maintaining a safe distance.&lt;/p&gt;&#xA;&lt;p&gt;So in order to begin with the development we started with a drone frame and a LiDAR sensor. The LiDAR sensor used is a 2 dimensional LiDAR sensor which is capable of providing 360 degree scan of the environment.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

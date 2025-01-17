@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Himanshu Patil</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on Himanshu Patil</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Himanshu</copyright>
+    <lastBuildDate>Wed, 15 Jan 2025 22:46:07 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Blog</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Wed, 15 Jan 2025 22:46:07 +0530</pubDate>
+      <guid>http://localhost:1313/pages/about/</guid>
+      <description>&lt;p&gt;Hello World! This is my portoflio and blog site.&lt;/p&gt;&#xA;&lt;p&gt;And before you ask.. My username is Agent Galahad (agntgalahad) from one of the best spy movie series &amp;lsquo;The Kingsman&amp;rsquo; (we dont count the last movie)&lt;/p&gt;&#xA;&lt;p&gt;I’m a Computer Science student with a big passion for robotics, machine learning, and computer vision. Right now, I’m at IIT Bombay working computer vision algorithms and drones.&lt;/p&gt;&#xA;&lt;p&gt;I’m gearing up for an MS in Robotics soon, but for now, this site is where I share my projects, ideas, and whatever else I’m building.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
