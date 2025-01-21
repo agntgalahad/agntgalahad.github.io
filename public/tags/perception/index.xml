@@ -11,16 +11,16 @@
     <atom:link href="https://agntgalahad.github.io/tags/perception/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>YD LiDAR Setup for ROS2 Humble</title>
-      <link>https://agntgalahad.github.io/posts/setup_ydlidar/</link>
+      <link>https://agntgalahad.github.io/blogs/setup_ydlidar/</link>
       <pubDate>Sat, 18 Jan 2025 00:08:56 +0530</pubDate>
-      <guid>https://agntgalahad.github.io/posts/setup_ydlidar/</guid>
+      <guid>https://agntgalahad.github.io/blogs/setup_ydlidar/</guid>
       <description>&lt;p&gt;The resources present on the internet for setting up the YDLidar SDK and integrating with ROS has been quite vague. So I am documenting the steps here for future reference.&lt;/p&gt;&#xA;&lt;p&gt;Here is my setup for reference:&lt;br&gt;&#xA;Ubuntu 22.04&lt;br&gt;&#xA;ROS2 Humble&lt;/p&gt;&#xA;&lt;p&gt;LiDAR Used: YDLidar X2&lt;/p&gt;&#xA;&lt;h1 id=&#34;yd-lidar-sdk-setup&#34;&gt;YD LiDAR SDK Setup&lt;/h1&gt;&#xA;&lt;p&gt;First of all we need to install the YDLidar SDK from their official github repo. The link for the same can be found here: &lt;a href=&#34;https://github.com/YDLIDAR/YDLidar-SDK&#34;&gt;YDLidar-SDK&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The LiDAR Drone Idea</title>
-      <link>https://agntgalahad.github.io/posts/lidar_idea/</link>
+      <link>https://agntgalahad.github.io/blogs/lidar_idea/</link>
       <pubDate>Wed, 15 Jan 2025 22:46:07 +0530</pubDate>
-      <guid>https://agntgalahad.github.io/posts/lidar_idea/</guid>
+      <guid>https://agntgalahad.github.io/blogs/lidar_idea/</guid>
       <description>&lt;p&gt;IDEA:&lt;br&gt;&#xA;To mount a LiDAR sensor on top of a drone to allow for real time obstacle avoidance. This should allow to fly the drone in an indoor environment autonomously. The drone will also have a camera mounted on it for active person tracking and following while maintaining a safe distance.&lt;/p&gt;&#xA;&lt;p&gt;So in order to begin with the development we started with a drone frame and a LiDAR sensor. The LiDAR sensor used is a 2 dimensional LiDAR sensor which is capable of providing 360 degree scan of the environment.&lt;/p&gt;</description>
     </item>
   </channel>

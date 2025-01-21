@@ -8,17 +8,21 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourDisqusShortname"
+disqusShortname = "agntgalahad"
 
-paginate=3 # articles per page
 
 [params]
-	mode="auto" # color-mode → light,dark,toggle or auto
+	mainSections = ["about"]
+	mode="toggle" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 
 # Social Tags
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/himanshupatil829/"
 
 [[params.social]]
 name = "GitHub"
@@ -35,19 +39,25 @@ url = "https://x.com/agnt_galahad"
 
 [[menu.main]]
 name = "Home"
-url = "/home"
+url = "/"
 weight = 1
 
 [[menu.main]]
 name = "Projects"
 url = "/projects"
 weight = 2
+
 [[menu.main]]
 name = "Blogs"
-url = "/posts"
+url = "/blogs"
 weight = 3
+
+[[menu.main]]
+name = "All Posts"
+url = "/posts"
+weight = 4
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 4
+weight = 5

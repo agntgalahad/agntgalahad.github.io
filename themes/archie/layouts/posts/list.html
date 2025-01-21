@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "header.html" . }}
+    <body>
+        <div class="content">
+            {{ partial "head.html" . }}
+            <main class="list">
+                <h1>All Blog Posts</h1>
+                <ul>
+                    <!-- List all blogs, but exclude the /posts page -->
+                    {{ $blogs := where .Site.Pages "Type" "blogs" }}
+                    {{ $blogs := where $blogs "File" "ne" nil }} <!-- Ensure File exists -->
+                    {{ $blogs = where $blogs "File.Path" "ne" "/posts/" }} <!-- Exclude /posts page -->
+                    {{ $paginator := .Paginate $blogs }}
+                    {{ range $paginator.Pages }}
+                    <li>
+                        <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+                <!-- Add pagination controls -->
+                {{ template "partials/paginator.html" . }}
+            </main>
+            {{ partial "footer.html" . }}
+        </div>
+    </body>
+</html>

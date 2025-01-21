@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "header.html" . }} <!-- Include the header -->
+    <body>
+        <div class="content">
+            {{ partial "head.html" . }} <!-- Include the head -->
+            <main class="list">
+                <h1>Blogs</h1>
+                <div class="site-description">
+                    <p>Explore my latest blog posts below!</p>
+                </div>
+                <!-- Pagination Logic -->
+                {{ $paginator := .Paginate .Pages }}
+                {{ range $paginator.Pages }}
+                <section class="list-item">
+                    <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                    <time>{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+                    <p>{{ .Summary }}</p>
+                    <a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
+                </section>
+                {{ end }}
+                <!-- Add pagination controls -->
+                {{ template "partials/paginator.html" . }}
+            </main>
+            {{ partial "footer.html" . }} <!-- Include the footer -->
+        </div>
+    </body>
+</html>
