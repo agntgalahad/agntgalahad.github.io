@@ -17,7 +17,7 @@ So in order to begin with the development we started with a drone frame and a Li
 
 The model in use is a YDLidar X2 with a range of 8m.
 
-![YDLidar X4](../../pics/LidarDroneIdea/lidar.jpg)
+![YDLidar X2](../../pics/LidarDroneIdea/lidar.jpg)
 
 As for the frame we decided to go with the F450 drone chassis. Since its one of the most common and cheap options for building a drone
 
