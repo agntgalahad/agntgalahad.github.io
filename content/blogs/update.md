@@ -24,11 +24,12 @@ One approach can be to just use a Intel Realsense sensor for sterio vision, but 
 So after that we realised that the GPS and IMU sensor that we had planned to use wont provide centimeter level accuracy that SLAM needs. So we are planning to go with a VIO (Visual Inertial Odometry). The VIO uses a combination of Visual Odometry and Interial Odometry. 
 
 The VIO in theory should allow for centimeter level accuracy. 
+
 ![Optical Flow Sensor](../../pics/Update/opticalflow.jpeg)
 
-The VIO uses 2 main methods:\
-1. Kalman Filter (or Extended Kalman Filter) for Intertial Odometry\
-2. Optical Flow for Visual Odometry\
+The VIO uses 2 main methods:
+1. Kalman Filter (or Extended Kalman Filter) for Intertial Odometry
+2. Optical Flow for Visual Odometry
 (note that this may change from algorithm to algorithm)
 
 The visual odometry uses an optical flow sensor that is mounted at the bottom of the drone. The the sensor based on the height of the drone and the change in features of the ground gets an estimation of the drones change in position.
