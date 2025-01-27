@@ -5,10 +5,6 @@ title : 'Update'
 draft: false
 tags: 
     - drone
-    - lidar
-    - navigation
-    - perception
-    - slam
 ---
 
 Yes this is a short post. I promise theres a big blog coming on one of the most interesting problems in robotics. So stay tuned for that.
