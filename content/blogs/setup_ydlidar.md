@@ -1,6 +1,6 @@
 ---
 title: "YD LiDAR Setup for ROS2 Humble"
-date: 2025-01-18T00:08:56+0530
+date: 2025-01-20T00:08:56+0530
 draft: false
 tags: 
     - drone
