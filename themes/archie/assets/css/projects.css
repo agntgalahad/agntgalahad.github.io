@@ -7,7 +7,7 @@
 
 .project-card {
     background-color: var(--background);
-    border: 1px solid var(--border-color); /* Remove this line to remove the border */
+    border: none; /* Set border to none */
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
@@ -23,8 +23,8 @@
 
 .project-card img {
     width: 100%;
-    height: 250px; /* Set a fixed height for uniformity */
-    object-fit: contain; /* Ensure the entire image fits within the height */
+    height: auto; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the entire image fits within the height */
 }
 
 .project-card h2 {
