@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Himanshu Patil</title>
+    <link>https://agntgalahad.github.io/projects/</link>
+    <description>Recent content in Projects on Himanshu Patil</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Himanshu</copyright>
+    <lastBuildDate>Fri, 31 Jan 2025 06:49:05 +0530</lastBuildDate>
+    <atom:link href="https://agntgalahad.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LiDAR-Equipped Autonomous Drone for 2D Mapping</title>
+      <link>https://agntgalahad.github.io/projects/lidar_drone_project/</link>
+      <pubDate>Fri, 31 Jan 2025 06:49:05 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/projects/lidar_drone_project/</guid>
+      <description>&lt;p&gt;This project involves developing an autonomous drone equipped with a 2D LiDAR sensor (e.g., RPLiDAR) for real-time mapping and navigation. Using ROS2 Humble, the system integrates Computer Vision and Machine Learning to enhance obstacle detection, localization, and path planning. The 2D LiDAR enables the drone to perform 2D SLAM (Simultaneous Localization and Mapping), constructing a floor-level occupancy grid for navigation in indoor and structured environments. Additional onboard sensors, such as an IMU and a downward-facing camera, will assist in altitude estimation and stabilization. This project is designed to improve skills in robot perception, sensor fusion, and autonomous flight control, making it a valuable addition to research in aerial robotics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>M.E.A.P - Meta Enhanced A.I. Palette</title>
+      <link>https://agntgalahad.github.io/projects/meap/</link>
+      <pubDate>Wed, 10 Apr 2024 06:49:05 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/projects/meap/</guid>
+      <description>&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement:&lt;/h2&gt;&#xA;&lt;p&gt;The landscape of image colorization tools is populated with solutions that predominantly rely on either manual interaction or automated algorithms. Automated algorithms leverage various techniques, including deep learning, to infer color from grayscale images. However, existing methods cannot often incorporate user guidance effectively, resulting in colorization that may not align with user expectations or preferences. This gap highlights the need for a more sophisticated approach that combines the power of generative models with user-provided textual prompts to produce accurate and personalized colorization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Podkashvani</title>
+      <link>https://agntgalahad.github.io/projects/podkashvani/</link>
+      <pubDate>Fri, 01 Mar 2024 20:16:41 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/projects/podkashvani/</guid>
+      <description>&lt;h2 id=&#34;project-description&#34;&gt;&lt;strong&gt;Project Description&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Podkashvani&lt;/strong&gt; is an AI-driven platform designed to revolutionize the way users consume textual information by converting dense documents into &lt;strong&gt;engaging audio podcasts&lt;/strong&gt;. This project leverages &lt;strong&gt;Natural Language Processing (NLP)&lt;/strong&gt; and &lt;strong&gt;Text-to-Speech (TTS) technologies&lt;/strong&gt; to break down complex academic content, research papers, and professional reports into easily digestible, audio-based learning modules.&lt;/p&gt;&#xA;&lt;p&gt;With the rise of digital learning, many students and professionals struggle with &lt;strong&gt;retaining focus&lt;/strong&gt; while reading long-form content. Podkashvani solves this problem by enabling users to &lt;strong&gt;listen and learn&lt;/strong&gt; anytime, anywhere, eliminating the barriers posed by traditional text-heavy study materials.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Image - DeHaze</title>
+      <link>https://agntgalahad.github.io/projects/image_dehaze/</link>
+      <pubDate>Sun, 24 Sep 2023 06:49:05 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/projects/image_dehaze/</guid>
+      <description>&lt;h2 id=&#34;project-overview&#34;&gt;&lt;strong&gt;Project Overview&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;strong&gt;AI-ML Based Intelligent De-Smoking/De-Hazing Algorithm&lt;/strong&gt; is an advanced real-time image and video processing solution designed to enhance visibility in fire-prone environments. Developed as part of &lt;strong&gt;Smart India Hackathon (SIH) 2023&lt;/strong&gt;, this project focuses on improving rescue operations by providing clear visuals of areas affected by smoke and haze, particularly in indoor fire hazards.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem-statement-sih1417&#34;&gt;&lt;strong&gt;Problem Statement (SIH1417)&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Fire hazards create &lt;strong&gt;dense smoke&lt;/strong&gt; that significantly &lt;strong&gt;reduces visibility&lt;/strong&gt;, making rescue operations more difficult. Existing dehazing algorithms suffer from &lt;strong&gt;high latency&lt;/strong&gt; and may not perform well in real-time conditions. Our project aims to develop an AI-powered &lt;strong&gt;low-latency, high-performance dehazing algorithm&lt;/strong&gt; to address this challenge effectively.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GAN Anime Face Generator</title>
+      <link>https://agntgalahad.github.io/projects/gan_anime_face_gen/</link>
+      <pubDate>Mon, 16 Jan 2023 06:49:05 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/projects/gan_anime_face_gen/</guid>
+      <description>&lt;p&gt;📂 &lt;strong&gt;GitHub Repository&lt;/strong&gt;: &lt;a href=&#34;https://github.com/agntgalahad/SIH2023-PixelEncoders&#34;&gt;SIH2023-PixelEncoders&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The GAN Anime Face Generator is a Deep Convolutional Generative Adversarial Network (DCGAN) designed to create 64x64 pixel anime-style face images from random noise inputs. Trained on a dataset of anime faces, the model comprises two primary components:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Generator&lt;/strong&gt;: This network takes random noise as input and generates new anime face images.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Discriminator&lt;/strong&gt;: This network evaluates images to distinguish between real images from the dataset and fake images produced by the generator.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

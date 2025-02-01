@@ -2,32 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Navigation on Himanshu Patil</title>
-    <link>http://localhost:1313/tags/navigation/</link>
+    <link>https://agntgalahad.github.io/tags/navigation/</link>
     <description>Recent content in Navigation on Himanshu Patil</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Himanshu</copyright>
-    <lastBuildDate>Mon, 27 Jan 2025 21:40:16 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/navigation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Update</title>
-      <link>http://localhost:1313/blogs/update/</link>
-      <pubDate>Mon, 27 Jan 2025 21:40:16 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/update/</guid>
-      <description>&lt;p&gt;Yes this is a short post. I promise theres a big blog coming on one of the most interesting problems in robotics. So stay tuned for that.&#xA;So here is an update post on the project.&lt;/p&gt;&#xA;&lt;p&gt;We are trying to work out the payload capacity of the drone and therefore the thrust that is going to be reauired for successfully flying the drone.&#xA;We had it worked out when we ran into another problem. Initially we had planned to use just the LiDAR for mapping but as you ca see from my past posts that the LiDAR that we are using is a 2D LiDAR. The issue arises here that since we can see that the drone navigates in 3D thus plotting only 2D may not be the best aproach.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Mon, 20 Jan 2025 00:08:56 +0530</lastBuildDate>
+    <atom:link href="https://agntgalahad.github.io/tags/navigation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>YD LiDAR Setup for ROS2 Humble</title>
-      <link>http://localhost:1313/blogs/setup_ydlidar/</link>
+      <link>https://agntgalahad.github.io/blogs/setup_ydlidar/</link>
       <pubDate>Mon, 20 Jan 2025 00:08:56 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/setup_ydlidar/</guid>
+      <guid>https://agntgalahad.github.io/blogs/setup_ydlidar/</guid>
       <description>&lt;p&gt;The resources present on the internet for setting up the YDLidar SDK and integrating with ROS has been quite vague. So I am documenting the steps here for future reference.&lt;/p&gt;&#xA;&lt;p&gt;Here is my setup for reference:&lt;br&gt;&#xA;Ubuntu 22.04&lt;br&gt;&#xA;ROS2 Humble&lt;/p&gt;&#xA;&lt;p&gt;LiDAR Used: YDLidar X2&lt;/p&gt;&#xA;&lt;h1 id=&#34;yd-lidar-sdk-setup&#34;&gt;YD LiDAR SDK Setup&lt;/h1&gt;&#xA;&lt;p&gt;First of all we need to install the YDLidar SDK from their official github repo. The link for the same can be found here: &lt;a href=&#34;https://github.com/YDLIDAR/YDLidar-SDK&#34;&gt;YDLidar-SDK&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The LiDAR Drone Idea</title>
-      <link>http://localhost:1313/blogs/lidar_idea/</link>
+      <link>https://agntgalahad.github.io/blogs/lidar_idea/</link>
       <pubDate>Wed, 15 Jan 2025 22:46:07 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/lidar_idea/</guid>
+      <guid>https://agntgalahad.github.io/blogs/lidar_idea/</guid>
       <description>&lt;p&gt;IDEA:&lt;br&gt;&#xA;To mount a LiDAR sensor on top of a drone to allow for real time obstacle avoidance. This should allow to fly the drone in an indoor environment autonomously. The drone will also have a camera mounted on it for active person tracking and following while maintaining a safe distance.&lt;/p&gt;&#xA;&lt;p&gt;So in order to begin with the development we started with a drone frame and a LiDAR sensor. The LiDAR sensor used is a 2 dimensional LiDAR sensor which is capable of providing 360 degree scan of the environment.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -115,4 +115,6 @@
 	<script src="{{ absURL . }}"></script>
 	{{- end }}
 	{{- end }}
+	{{ $projectsCSS := resources.Get "css/projects.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $projectsCSS.Permalink }}">
 </head>
