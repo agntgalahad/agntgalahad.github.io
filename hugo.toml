@@ -18,6 +18,10 @@ disqusShortname = "agntgalahad"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 
+[services]
+  [services.googleAnalytics]
+    id = 'G-0PDRRKVSZ7'
+
 # Social Tags
 [[params.social]]
 name = "LinkedIn"

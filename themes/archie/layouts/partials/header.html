@@ -117,4 +117,5 @@
 	{{- end }}
 	{{ $projectsCSS := resources.Get "css/projects.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $projectsCSS.Permalink }}">
+	{{ template "_internal/google_analytics.html" . }}
 </head>
