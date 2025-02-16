@@ -6,12 +6,12 @@
     <description>Recent content in Blogs on Himanshu Patil</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jan 2025 23:42:11 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2025 23:42:11 +0530</lastBuildDate>
     <atom:link href="https://agntgalahad.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SLAM 101</title>
       <link>https://agntgalahad.github.io/blogs/slam_part_1/</link>
-      <pubDate>Tue, 28 Jan 2025 23:42:11 +0530</pubDate>
+      <pubDate>Sat, 15 Feb 2025 23:42:11 +0530</pubDate>
       <guid>https://agntgalahad.github.io/blogs/slam_part_1/</guid>
       <description>&lt;p&gt;SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.The main purpose of SLAM is for a robot to build the map of an unknown environment as well as know its position inside that environment&lt;br&gt;&#xA;Therefore SLAM tries to answer the 2 main question for a robot:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Where am I ?&lt;/li&gt;&#xA;&lt;li&gt;What does my surrounding look like ?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;SLAM can be divided into these core components:&lt;/p&gt;</description>
     </item>

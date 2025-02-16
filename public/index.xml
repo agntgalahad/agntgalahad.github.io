@@ -6,21 +6,21 @@
     <description>Recent content in Welcome to My Site on Himanshu Patil</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jan 2025 06:49:05 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2025 23:42:11 +0530</lastBuildDate>
     <atom:link href="https://agntgalahad.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLAM 101</title>
+      <link>https://agntgalahad.github.io/blogs/slam_part_1/</link>
+      <pubDate>Sat, 15 Feb 2025 23:42:11 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/blogs/slam_part_1/</guid>
+      <description>&lt;p&gt;SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.The main purpose of SLAM is for a robot to build the map of an unknown environment as well as know its position inside that environment&lt;br&gt;&#xA;Therefore SLAM tries to answer the 2 main question for a robot:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Where am I ?&lt;/li&gt;&#xA;&lt;li&gt;What does my surrounding look like ?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;SLAM can be divided into these core components:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LiDAR-Equipped Autonomous Drone for 2D Mapping</title>
       <link>https://agntgalahad.github.io/projects/lidar_drone_project/</link>
       <pubDate>Fri, 31 Jan 2025 06:49:05 +0530</pubDate>
       <guid>https://agntgalahad.github.io/projects/lidar_drone_project/</guid>
       <description>&lt;p&gt;This project involves developing an autonomous drone equipped with a 2D LiDAR sensor (e.g., RPLiDAR) for real-time mapping and navigation. Using ROS2 Humble, the system integrates Computer Vision and Machine Learning to enhance obstacle detection, localization, and path planning. The 2D LiDAR enables the drone to perform 2D SLAM (Simultaneous Localization and Mapping), constructing a floor-level occupancy grid for navigation in indoor and structured environments. Additional onboard sensors, such as an IMU and a downward-facing camera, will assist in altitude estimation and stabilization. This project is designed to improve skills in robot perception, sensor fusion, and autonomous flight control, making it a valuable addition to research in aerial robotics.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SLAM 101</title>
-      <link>https://agntgalahad.github.io/blogs/slam_part_1/</link>
-      <pubDate>Tue, 28 Jan 2025 23:42:11 +0530</pubDate>
-      <guid>https://agntgalahad.github.io/blogs/slam_part_1/</guid>
-      <description>&lt;p&gt;SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.The main purpose of SLAM is for a robot to build the map of an unknown environment as well as know its position inside that environment&lt;br&gt;&#xA;Therefore SLAM tries to answer the 2 main question for a robot:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Where am I ?&lt;/li&gt;&#xA;&lt;li&gt;What does my surrounding look like ?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;SLAM can be divided into these core components:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Update</title>
