@@ -1,78 +1,80 @@
 <!DOCTYPE html>
-<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head lang="en">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>SLAM 101 - Himanshu Patil</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="This blog covers the basics of SLAM. I will try to use simple language for the beginners as well as go over the mathematics for the more experienced readers.
-SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.
-SLAM tries to answer the 2 main question for a robot:
+	<meta name="description" content="SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.The main purpose of SLAM is for a robot to build the map of an unknown environment as well as know its position inside that environment
+Therefore SLAM tries to answer the 2 main question for a robot:
 
 Where am I ?
 What does my surrounding look like ?
-" />
+
+SLAM can be divided into these core components:" />
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content="http://localhost:1313/blogs/slam_part_1/">
+	<meta property="og:url" content="https://agntgalahad.github.io/blogs/slam_part_1/">
   <meta property="og:site_name" content="Himanshu Patil">
   <meta property="og:title" content="SLAM 101">
-  <meta property="og:description" content="This blog covers the basics of SLAM. I will try to use simple language for the beginners as well as go over the mathematics for the more experienced readers.
-SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.
-SLAM tries to answer the 2 main question for a robot:
-Where am I ? What does my surrounding look like ?">
+  <meta property="og:description" content="SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.The main purpose of SLAM is for a robot to build the map of an unknown environment as well as know its position inside that environment
+Therefore SLAM tries to answer the 2 main question for a robot:
+Where am I ? What does my surrounding look like ? SLAM can be divided into these core components:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
     <meta property="article:published_time" content="2025-01-28T23:42:11+05:30">
     <meta property="article:modified_time" content="2025-01-28T23:42:11+05:30">
-    <meta property="article:tag" content="Drone">
+    <meta property="article:tag" content="Slam">
+    <meta property="article:tag" content="Visual Slam">
+    <meta property="article:tag" content="Odometry">
+    <meta property="article:tag" content="Camera">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="SLAM 101">
-  <meta name="twitter:description" content="This blog covers the basics of SLAM. I will try to use simple language for the beginners as well as go over the mathematics for the more experienced readers.
-SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.
-SLAM tries to answer the 2 main question for a robot:
-Where am I ? What does my surrounding look like ?">
+  <meta name="twitter:description" content="SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.The main purpose of SLAM is for a robot to build the map of an unknown environment as well as know its position inside that environment
+Therefore SLAM tries to answer the 2 main question for a robot:
+Where am I ? What does my surrounding look like ? SLAM can be divided into these core components:">
 
-        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+        <link href="https://agntgalahad.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.e5be0b244cfea0385bf04425148e0847f227ebc587eb7cf8ce8e2532d66a9248.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled /><script type="text/javascript"
-		src="http://localhost:1313/js/MathJax.js"></script>
-		
-		<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-			tex2jax: {
-				inlineMath: [['$','$'], ['\\(','\\)']],
-				displayMath: [['$$','$$'], ['\[','\]']],
-				processEscapes: true,
-				processEnvironments: true,
-				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-				TeX: { equationNumbers: { autoNumber: "AMS" },
-						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
-			}
-		});
-		</script><link rel="stylesheet" href="http://localhost:1313/katex/katex.min.css ">
-		<script defer src="http://localhost:1313/katex/katex.min.js"></script>
-		<script defer src="http://localhost:1313/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://agntgalahad.github.io/css/main.e5be0b244cfea0385bf04425148e0847f227ebc587eb7cf8ce8e2532d66a9248.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://agntgalahad.github.io/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"   /><link rel="stylesheet" href="https://agntgalahad.github.io/katex/katex.min.css ">
+		<script defer src="https://agntgalahad.github.io/katex/katex.min.js"></script>
+		<script defer src="https://agntgalahad.github.io/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 		
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 					renderMathInElement(document.body, {
 							delimiters: [
-									{left: "$$", right: "$$", display: true},
-									{left: "$", right: "$", display: false}
+							{left: "$$", right: "$$", display: true},
+        {left: "\\[", right: "\\]", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false}
 							]
 					});
 			});
 		</script>
 	
-    <link rel="stylesheet" href="http://localhost:1313/css/projects.min.06ce47d9454480c6c1e0580d327c3d4180e56cb3098dd631f08af9310a9a71d8.css">
+    <link rel="stylesheet" href="https://agntgalahad.github.io/css/projects.min.06ce47d9454480c6c1e0580d327c3d4180e56cb3098dd631f08af9310a9a71d8.css">
 	
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PDRRKVSZ7"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0PDRRKVSZ7');
+        }
+      </script>
 </head>
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="http://localhost:1313/">Himanshu Patil</a>
+		<a href="https://agntgalahad.github.io/">Himanshu Patil</a>
 	</div>
 	<nav>
 		
@@ -86,10 +88,6 @@ Where am I ? What does my surrounding look like ?">
 		
 		<a href="/tags">Tags</a>
 		
-		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
-   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
-</svg></span>
-		<script src="http://localhost:1313/js/themetoggle.js"></script>
 		
 	</nav>
 </header>
@@ -101,17 +99,59 @@ Where am I ? What does my surrounding look like ?">
       <div class="post-content">
         <div class="title">
           <h1 class="title">SLAM 101</h1>
-          <div class="meta">Posted on Jan 28, 2025 <span class="draft-label">DRAFT</span> </div>
+          <div class="meta">Posted on Jan 28, 2025</div>
         </div>
         
         <section class="body">
-          <p>This blog covers the basics of SLAM. I will try to use simple language for the beginners as well as go over the mathematics for the more experienced readers.<br>
-SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.<br>
-SLAM tries to answer the 2 main question for a robot:</p>
+          <p>SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.The main purpose of SLAM is for a robot to build the map of an unknown environment as well as know its position inside that environment<br>
+Therefore SLAM tries to answer the 2 main question for a robot:</p>
 <ol>
 <li>Where am I ?</li>
 <li>What does my surrounding look like ?</li>
 </ol>
+<p>SLAM can be divided into these core components:</p>
+<ol>
+<li>Localization: Localization is the process by which a SLAM system determines its position within an environment. It involves estimating the pose of the device down to 6 degree of freedom relative to a reference frame.<br>
+The most common algorithms used in for localization include Extended Kalman Filter(EKF), Particle Filter.<br>
+The choice of algorithm depends on factors such as the specific application, computational resources, and the characteristics of the environment. For example, in highly dynamic environments, algorithms that can handle non-linearities and uncertainties, like particle filters, may be preferred.</li>
+<li>Mapping: Mapping involves creating a map or a representation of the surrounding as the robot moves through the environment. The type of map ranges from feature map, occupancy grid, point cloud depending on the type of sensor used.</li>
+<li>Sensor Integration: The SLAM system relies on integration of data from multiple sensors. This is known as sensor fusion. It enhances the robustness of the SLAM system.</li>
+</ol>
+<p>In our scenario ie. the LiDAR drone a camera will be mounted on the drone for performing Visual SLAM. The data from the camera is to be integrated with the 2D LiDAR that will be attached on top of the drone for a all round SLAM system.</p>
+<p>Lets discuss Visual SLAM more in detail..</p>
+<p>In Visual SLAM the only sensor used is the Camera.</p>
+<p>Here is the General Visual SLAM Pipeline<br>
+<img src="../../pics/SLAM1/framework.png" alt="Visual SLAM"></p>
+<p>Lets go step by step:</p>
+<ol>
+<li>Sensor Data Acquisition:<br>
+This involves acquisition of data from sensors (in this case a camera) and pre-processing of the data. This step also involves acquisition and syncronisation of data from other sensors on board the robot like IMUs, motor encoders, etc.</li>
+<li>Visual Odometry:<br>
+This involves estimation of the position of the camera based on the adjacent frames from the camera. We want to estimate the 6 Degrees of Freedom(DoF) camera pose $[R|T]$ incrementally.
+For monocular camera this can be done by utilizing epipolar geometry.<br>
+<img src="../../pics/SLAM1/visual_odo.png" alt="Visual Odometry"></li>
+<li>Backend Filtering/Optimization:<br>
+The backend optimization receives camera positions at different time steps from the Visual Odometry and results from the Loop Closing and then applies optimization to generate the complete optimized trajectory and map.This step involves figuring out the amount of noise present in the data received from the sensors.</li>
+<li>Loop Closing:<br>
+Loop closing does exactly what it says it does that is to check if the camera has return to a location and orientation that has been previously visited to reduce the accumulated drift from noise. When a loop closing is identified the backend optimization is notified for further optimization.<br>
+<img src="../../pics/SLAM1/loop_closing.png" alt="Loop Closing"></li>
+<li>Reconstruction:<br>
+This step involves creating the estimated map of the environment based on the estimated camera trajectory.</li>
+</ol>
+<p>Now lets try to define this mathematically..</p>
+<p>Lets say theres a robot with sensors mounted for performing SLAM. The sensors relay the data at discrete time steps so the time steps can be represented as $1,&hellip;,k$. The position of the robot can be represented by $x$. Therefore the position at different time steps is $x_1,&hellip;,x_k$. Lets assume that the environment hs multiple landmarks and the robot can see these landmarks at a given time instant. Lets represent these landmarks as $y$, so the $N$ landmarks in the environment can be written as $y_1,&hellip;,y_N$</p>
+<p>Now based on this we can define the representation of the position of the robot at a given time instant as
+$$x_k = f(x_{k-1}, u_k, w_k)$$
+where $u_k$ are the input commands and $w_k$ is the noise. Here we have used a abstract mathematical model to describe the function $f$ since the type of controller is unknown the function can represent any motion input. This is called the Motion Equation.</p>
+<p>Due to noise being present in the equation the model is a Stochastic Model. Generally the amount of noise is very less but over the course of time the amount of noise adds up if not dealt with. The noise during each movement is random.</p>
+<p>Now lets define the observation equation. It describes the process of the robot seeing and detecting a landmark $y_j$ at $x_k$ and generates observation $z_k,j$. This can be defined as</p>
+<p>$$z_k,j = h(y_j, x_k, v_k,j)$$
+where $v_k,j$ is the noise in the observation.</p>
+<p>Therefore we can describe the SLAM process using these 2 equations,</p>
+<p><img src="../../pics/SLAM1/equation.png" alt="SLAM Equation"></p>
+<h1 id="references">References</h1>
+<p>[1] 14 Lectures on Visual SLAM: From Theory to Practice - <a href="https://github.com/gaoxiang12/slambook-en/tree/master">Github Repo</a><br>
+[2] SLAM for Dummies - <a href="https://dspace.mit.edu/bitstream/handle/1721.1/119149/16-412j-spring-2005/contents/projects/1aslam_blas_repo.pdf">Book</a></p>
 
         </section>
         <div class="post-tags">
@@ -120,7 +160,13 @@ SLAM tries to answer the 2 main question for a robot:</p>
           <nav class="nav tags">
             <ul class="tags">
               
-              <li><a href="/tags/drone">drone</a></li>
+              <li><a href="/tags/slam">slam</a></li>
+              
+              <li><a href="/tags/visual-slam">visual slam</a></li>
+              
+              <li><a href="/tags/odometry">odometry</a></li>
+              
+              <li><a href="/tags/camera">camera</a></li>
               
             </ul>
           </nav>
@@ -160,10 +206,26 @@ SLAM tries to answer the 2 main question for a robot:</p>
    <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#twitter" />
 </svg></a><a class="border"></a></div>
   <div class="footer-info">
-    2025  © Himanshu |  <a
+    2025  <a
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PDRRKVSZ7"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0PDRRKVSZ7');
+        }
+      </script>
 
 </div>
     </body>

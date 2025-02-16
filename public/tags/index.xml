@@ -6,9 +6,36 @@
     <description>Recent content in Tags on Himanshu Patil</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© Himanshu</copyright>
-    <lastBuildDate>Mon, 27 Jan 2025 21:40:16 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jan 2025 23:42:11 +0530</lastBuildDate>
     <atom:link href="https://agntgalahad.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Camera</title>
+      <link>https://agntgalahad.github.io/tags/camera/</link>
+      <pubDate>Tue, 28 Jan 2025 23:42:11 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/tags/camera/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Odometry</title>
+      <link>https://agntgalahad.github.io/tags/odometry/</link>
+      <pubDate>Tue, 28 Jan 2025 23:42:11 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/tags/odometry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slam</title>
+      <link>https://agntgalahad.github.io/tags/slam/</link>
+      <pubDate>Tue, 28 Jan 2025 23:42:11 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/tags/slam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visual Slam</title>
+      <link>https://agntgalahad.github.io/tags/visual-slam/</link>
+      <pubDate>Tue, 28 Jan 2025 23:42:11 +0530</pubDate>
+      <guid>https://agntgalahad.github.io/tags/visual-slam/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Drone</title>
       <link>https://agntgalahad.github.io/tags/drone/</link>
@@ -35,13 +62,6 @@
       <link>https://agntgalahad.github.io/tags/perception/</link>
       <pubDate>Mon, 20 Jan 2025 00:08:56 +0530</pubDate>
       <guid>https://agntgalahad.github.io/tags/perception/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Slam</title>
-      <link>https://agntgalahad.github.io/tags/slam/</link>
-      <pubDate>Mon, 20 Jan 2025 00:08:56 +0530</pubDate>
-      <guid>https://agntgalahad.github.io/tags/slam/</guid>
       <description></description>
     </item>
   </channel>

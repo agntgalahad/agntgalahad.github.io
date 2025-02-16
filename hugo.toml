@@ -2,7 +2,6 @@ baseURL = "https://agntgalahad.github.io/"
 languageCode = "en-us"
 title = "Himanshu Patil"
 theme="archie"
-copyright = "© Himanshu"
 # Code Highlight
 pygmentsstyle = "monokai"
 pygmentscodefences = true
@@ -13,14 +12,16 @@ disqusShortname = "agntgalahad"
 
 [params]
 	mainSections = ["about"]
-	mode="toggle" # color-mode → light,dark,toggle or auto
+	mode="dark" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	mathjax = true # enable MathJax support
+	mathjax = false # enable MathJax support
 	katex = true # enable KaTeX support
 
 [services]
   [services.googleAnalytics]
     id = 'G-0PDRRKVSZ7'
+
+
 
 # Social Tags
 [[params.social]]

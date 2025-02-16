@@ -20,22 +20,7 @@
 
 	
 	<link rel="stylesheet" type="text/css" media="screen" href="https://agntgalahad.github.io/css/main.e5be0b244cfea0385bf04425148e0847f227ebc587eb7cf8ce8e2532d66a9248.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://agntgalahad.github.io/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled /><script type="text/javascript"
-		src="https://agntgalahad.github.io/js/MathJax.js"></script>
-		
-		<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-			tex2jax: {
-				inlineMath: [['$','$'], ['\\(','\\)']],
-				displayMath: [['$$','$$'], ['\[','\]']],
-				processEscapes: true,
-				processEnvironments: true,
-				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-				TeX: { equationNumbers: { autoNumber: "AMS" },
-						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
-			}
-		});
-		</script><link rel="stylesheet" href="https://agntgalahad.github.io/katex/katex.min.css ">
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://agntgalahad.github.io/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"   /><link rel="stylesheet" href="https://agntgalahad.github.io/katex/katex.min.css ">
 		<script defer src="https://agntgalahad.github.io/katex/katex.min.js"></script>
 		<script defer src="https://agntgalahad.github.io/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 		
@@ -43,8 +28,10 @@
 			document.addEventListener("DOMContentLoaded", function() {
 					renderMathInElement(document.body, {
 							delimiters: [
-									{left: "$$", right: "$$", display: true},
-									{left: "$", right: "$", display: false}
+							{left: "$$", right: "$$", display: true},
+        {left: "\\[", right: "\\]", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false}
 							]
 					});
 			});
@@ -86,10 +73,6 @@
 		
 		<a href="/tags">Tags</a>
 		
-		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
-   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
-</svg></span>
-		<script src="https://agntgalahad.github.io/js/themetoggle.js"></script>
 		
 	</nav>
 </header>
@@ -101,6 +84,19 @@
                 </div>
                 
                 
+                
+                <section class="list-item">
+                    <h2 class="title"><a href="/blogs/slam_part_1/">SLAM 101</a></h2>
+                    <time>Jan 28, 2025</time>
+                    <p><p>SLAM stands for Simultaneous Localization and Mapping. It has been and still is one of the unsolved problems in robotics.The main purpose of SLAM is for a robot to build the map of an unknown environment as well as know its position inside that environment<br>
+Therefore SLAM tries to answer the 2 main question for a robot:</p>
+<ol>
+<li>Where am I ?</li>
+<li>What does my surrounding look like ?</li>
+</ol>
+<p>SLAM can be divided into these core components:</p></p>
+                    <a class="readmore" href="/blogs/slam_part_1/">Read more ⟶</a>
+                </section>
                 
                 <section class="list-item">
                     <h2 class="title"><a href="/blogs/update/">Update</a></h2>
@@ -148,7 +144,7 @@ To mount a LiDAR sensor on top of a drone to allow for real time obstacle avoida
    <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#twitter" />
 </svg></a><a class="border"></a></div>
   <div class="footer-info">
-    2025  © Himanshu |  <a
+    2025  <a
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
