@@ -2,7 +2,19 @@
 <main>
   <article>
     <div class="post-container">
-      <!-- Main Content -->
+      <!-- Add a condition for the about page -->
+      {{ if eq .File.Path "content/about.md" }}
+      <div class="about-container" style="display: flex; align-items: center; gap: 20px; padding: 20px;">
+        <img src="/images/profile.png" alt="Your Profile Picture" style="max-width: 200px; border-radius: 50%;">
+        <div class="introduction" style="max-width: 600px; font-family: Arial, sans-serif; line-height: 1.6;">
+          <h1>About Me</h1>
+          <p>Hi, I’m Himanshu Patil! Welcome to my personal website. I am a Computer Science student specializing in Robotics, Machine Learning, and Computer Vision.</p>
+          <p>🌟 Current Projects: Multi-camera person re-identification, LiDAR-based drones.</p>
+          <p>🛠️ Skills: ROS2, Python, C++, Ubuntu, TensorFlow.</p>
+          <p>Feel free to explore my projects and blogs or connect with me on social media!</p>
+        </div>
+      </div>
+      {{ else }}
       <div class="post-content">
         <div class="title">
           <h1 class="title">{{ .Title }}</h1>
@@ -37,6 +49,7 @@
         <strong>Table of contents:</strong>
         {{ .TableOfContents }}
       </div>
+      {{ end }}
       {{ end }}
     </div>
 

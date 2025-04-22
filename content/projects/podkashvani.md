@@ -5,6 +5,8 @@ description: "Podkashvani is an AI-powered platform that converts dense text doc
 image: "../../pics/Projects/podkashvani.png"  # Place your image in the 'static/images' directory
 draft: false
 ---
+![PODKASHVANI ICON](../../pics/Projects/podkashvani_icon.png)
+CHECK OUT THE REPORT HERE [PODKASHVANI REPORT](https://www.canva.com/design/DAF_uftzB5Y/OXqHvNV4Wu8P7rLPILUR_Q/view?utm_content=DAF_uftzB5Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he1d8164373)
 
 ## **Project Description**  
 **Podkashvani** is an AI-driven platform designed to revolutionize the way users consume textual information by converting dense documents into **engaging audio podcasts**. This project leverages **Natural Language Processing (NLP)** and **Text-to-Speech (TTS) technologies** to break down complex academic content, research papers, and professional reports into easily digestible, audio-based learning modules.

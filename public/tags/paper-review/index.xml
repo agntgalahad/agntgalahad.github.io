@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paper Review on Himanshu Patil</title>
+    <link>http://localhost:1313/tags/paper-review/</link>
+    <description>Recent content in Paper Review on Himanshu Patil</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Mar 2025 21:40:16 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VGGT: Visual Geometry Grounded Transformer</title>
+      <link>http://localhost:1313/blogs/vggd/</link>
+      <pubDate>Thu, 20 Mar 2025 21:40:16 +0530</pubDate>
+      <guid>http://localhost:1313/blogs/vggd/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;3D reconstruction has always been one of the most interesting problems of 3D computer vision. The methodology until now had relied on Structure from Motion (SfM) and Multi View Sterio (MVS). These methodologies rely more on post processing algorithms and can only process 2 frames at a time.&lt;/p&gt;&#xA;&lt;p&gt;VGGT (Visual Geometry Grounded Transformer) by Meta utilizes a large feed-forward transformer to infer all key 3D attributes directly from images. This eliminates the need for post-processing, making VGGT highly efficient while achieving state-of-the-art results in tasks like camera pose estimation, camera parameter estimation, multi-view depth estimation, dense point cloud reconstruction, and 3D point tracking.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

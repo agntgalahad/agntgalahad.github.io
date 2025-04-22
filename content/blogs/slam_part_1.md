@@ -1,6 +1,5 @@
 ---
 date : '2025-02-15T23:42:11+0530'
-draft : true
 title : 'SLAM 101'
 draft: false
 tags: 

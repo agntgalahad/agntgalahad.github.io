@@ -18,6 +18,7 @@
                     <p>{{ .Summary }}</p>
                     <a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
                 </section>
+                <hr> <!-- Add horizontal line here -->
                 {{ end }}
                 <!-- Add pagination controls -->
                 {{ template "partials/paginator.html" . }}

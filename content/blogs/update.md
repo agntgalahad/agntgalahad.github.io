@@ -1,6 +1,5 @@
 ---
 date : '2025-01-27T21:40:16+05:30'
-draft : true
 title : 'Update'
 draft: false
 tags: 
