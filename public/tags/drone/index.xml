@@ -9,6 +9,13 @@
     <lastBuildDate>Mon, 27 Jan 2025 21:40:16 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/drone/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Review on the paper &#34;Decentralised Multi-Robot Exploration using Monte Carlo Tree Search&#34;</title>
+      <link>http://localhost:1313/blogs/swarm/</link>
+      <pubDate>Mon, 27 Jan 2025 21:40:16 +0530</pubDate>
+      <guid>http://localhost:1313/blogs/swarm/</guid>
+      <description>&lt;p&gt;So I think that the problem of exploring unknown areas using UVs is one of the best unsolved problems in robotics. The algorihtms like SLAM have been developing for some time and are getting even better and better with algorithms like ORLB-SLAM 3, and MapEverthing for dense reconstruction of the environment. Other methods for short term mapping include the NVBlox (that uses GPU accelerated VoxBlox) library by NVIDIA.&lt;/p&gt;&#xA;&lt;p&gt;But one of they key commonality in these set of algorithms is that these algorithms don&amp;rsquo;t instruct the UV to choose optimal actions to explore the area. Swarm robotics can also be used to explore unknown areas by assigning different areas to agents/peers while also minimising overlapping areas and time.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Update</title>
       <link>http://localhost:1313/blogs/update/</link>
       <pubDate>Mon, 27 Jan 2025 21:40:16 +0530</pubDate>

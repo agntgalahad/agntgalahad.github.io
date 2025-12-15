@@ -23,6 +23,13 @@
       <description>&lt;p&gt;This project involves developing an autonomous drone equipped with a 2D LiDAR sensor (e.g., RPLiDAR) for real-time mapping and navigation. Using ROS2 Humble, the system integrates Computer Vision and Machine Learning to enhance obstacle detection, localization, and path planning. The 2D LiDAR enables the drone to perform 2D SLAM (Simultaneous Localization and Mapping), constructing a floor-level occupancy grid for navigation in indoor and structured environments. Additional onboard sensors, such as an IMU and a downward-facing camera, will assist in altitude estimation and stabilization. This project is designed to improve skills in robot perception, sensor fusion, and autonomous flight control, making it a valuable addition to research in aerial robotics.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Review on the paper &#34;Decentralised Multi-Robot Exploration using Monte Carlo Tree Search&#34;</title>
+      <link>http://localhost:1313/blogs/swarm/</link>
+      <pubDate>Mon, 27 Jan 2025 21:40:16 +0530</pubDate>
+      <guid>http://localhost:1313/blogs/swarm/</guid>
+      <description>&lt;p&gt;So I think that the problem of exploring unknown areas using UVs is one of the best unsolved problems in robotics. The algorihtms like SLAM have been developing for some time and are getting even better and better with algorithms like ORLB-SLAM 3, and MapEverthing for dense reconstruction of the environment. Other methods for short term mapping include the NVBlox (that uses GPU accelerated VoxBlox) library by NVIDIA.&lt;/p&gt;&#xA;&lt;p&gt;But one of they key commonality in these set of algorithms is that these algorithms don&amp;rsquo;t instruct the UV to choose optimal actions to explore the area. Swarm robotics can also be used to explore unknown areas by assigning different areas to agents/peers while also minimising overlapping areas and time.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Update</title>
       <link>http://localhost:1313/blogs/update/</link>
       <pubDate>Mon, 27 Jan 2025 21:40:16 +0530</pubDate>

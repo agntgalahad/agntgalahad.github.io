@@ -6,7 +6,7 @@ image: "../../pics/Projects/gan.png"
 draft: false
 ---
 
-📂 **GitHub Repository**: [SIH2023-PixelEncoders](https://github.com/agntgalahad/SIH2023-PixelEncoders)  
+📂 **GitHub Repository**: [GAN-Anime-Face-Generator](https://github.com/agntgalahad/GAN-Anime-Face-Generator)  
 
 The GAN Anime Face Generator is a Deep Convolutional Generative Adversarial Network (DCGAN) designed to create 64x64 pixel anime-style face images from random noise inputs. Trained on a dataset of anime faces, the model comprises two primary components:
 
@@ -19,5 +19,3 @@ Through adversarial training, where the generator aims to produce convincing ima
 The project includes a Jupyter Notebook for training and generating images, with the model trained on a local runtime. The dataset used for training is available at [https://www.kaggle.com/datasets/soumikrakshit/anime-faces](https://www.kaggle.com/datasets/soumikrakshit/anime-faces).
 
 This project demonstrates the application of GANs in generating novel anime-style faces, highlighting the potential of deep learning in creative and entertainment industries. 
-
-📂 **GitHub Repository**: [GAN Anime Face Generator](https://github.com/agntgalahad/GAN-Anime-Face-Generator)  
