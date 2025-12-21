@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Himanshu Patil</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Feb 2025 23:42:11 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 21:40:16 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drone</title>
+      <link>http://localhost:1313/tags/drone/</link>
+      <pubDate>Sat, 20 Dec 2025 21:40:16 +0530</pubDate>
+      <guid>http://localhost:1313/tags/drone/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Camera</title>
       <link>http://localhost:1313/tags/camera/</link>
@@ -34,13 +41,6 @@
       <link>http://localhost:1313/tags/visual-slam/</link>
       <pubDate>Sat, 15 Feb 2025 23:42:11 +0530</pubDate>
       <guid>http://localhost:1313/tags/visual-slam/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Drone</title>
-      <link>http://localhost:1313/tags/drone/</link>
-      <pubDate>Mon, 27 Jan 2025 21:40:16 +0530</pubDate>
-      <guid>http://localhost:1313/tags/drone/</guid>
       <description></description>
     </item>
     <item>
