@@ -21,5 +21,24 @@ Given a dimension of an area to be mapped out like 100m x 100m the area is divid
 
 The paper proposes a Monte Carlo Tree Search based method for division of task among the peers. Therefore the objective function can be defined as
 
-$$\hat{p} = \arg\max_{p \in \mathcal{P}} \; \mathbb{E}[V(x_0, p)]$$
+$$\hat{p} = \arg\max_{p \in \mathcal{P}} \ \mathbb{E}[V(x_0, p)]$$
+
+The paper describes the reward function as
+
+$$ V(x, p) = \frac{N^{f}_{\text{known}}}{N_{\text{cells}}} = 1 - \frac{N^{f}_{\text{unknown}}}{N_{\text{cells}}} $$
+
+For Hugo, ensure your `config.toml` has Markdown rendering configured for math:
+
+```toml
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [["$$", "$$"]]
+inline = [["$", "$"]]
+```
+
+Alternatively, use display math syntax without extra spaces:
+
+$$V(x, p) = \frac{N^{f}_{\text{known}}}{N_{\text{cells}}} = 1 - \frac{N^{f}_{\text{unknown}}}{N_{\text{cells}}}$$
+
 

@@ -103,7 +103,17 @@ To explore a specified unknown area and classify the area into +1(occupied), 0(u
 For example:
 Given a dimension of an area to be mapped out like 100m x 100m the area is divided into grids of any size (for eg. 1m x 1m). The aim is to assign the values 0, -1, +1 to each of the grids present.</p>
 <p>The paper proposes a Monte Carlo Tree Search based method for division of task among the peers. Therefore the objective function can be defined as</p>
-<p>$$\hat{p} = \arg\max_{p \in \mathcal{P}} ; \mathbb{E}[V(x_0, p)]$$</p>
+<p>$$\hat{p} = \arg\max_{p \in \mathcal{P}} \ \mathbb{E}[V(x_0, p)]$$</p>
+<p>The paper describes the reward function as</p>
+<p>$$ V(x, p) = \frac{N^{f}<em>{\text{known}}}{N</em>{\text{cells}}} = 1 - \frac{N^{f}<em>{\text{unknown}}}{N</em>{\text{cells}}} $$</p>
+<p>For Hugo, ensure your <code>config.toml</code> has Markdown rendering configured for math:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">extensions</span>.<span style="color:#a6e22e">passthrough</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">extensions</span>.<span style="color:#a6e22e">passthrough</span>.<span style="color:#a6e22e">delimiters</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">block</span> = [[<span style="color:#e6db74">&#34;$$&#34;</span>, <span style="color:#e6db74">&#34;$$&#34;</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inline</span> = [[<span style="color:#e6db74">&#34;$&#34;</span>, <span style="color:#e6db74">&#34;$&#34;</span>]]
+</span></span></code></pre></div><p>Alternatively, use display math syntax without extra spaces:</p>
+<p>$$V(x, p) = \frac{N^{f}<em>{\text{known}}}{N</em>{\text{cells}}} = 1 - \frac{N^{f}<em>{\text{unknown}}}{N</em>{\text{cells}}}$$</p>
 
         </section>
         <div class="post-tags">
